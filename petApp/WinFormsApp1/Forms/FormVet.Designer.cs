@@ -138,7 +138,6 @@
             comboBox1.ItemHeight = 15;
             comboBox1.Items.AddRange(new object[] { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" });
             comboBox1.Location = new Point(114, 104);
-            comboBox1.MaxDropDownItems = 6;
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(118, 23);
             comboBox1.TabIndex = 24;
