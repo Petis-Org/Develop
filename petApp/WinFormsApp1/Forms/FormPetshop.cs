@@ -54,5 +54,10 @@ namespace WinFormsApp1.Forms
             controlPetshopContact frm = new controlPetshopContact();
             frm.Show();
         }
+
+        private void FormPetshop_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

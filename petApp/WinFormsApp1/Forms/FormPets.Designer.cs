@@ -35,10 +35,10 @@
             label1 = new Label();
             label3 = new Label();
             label2 = new Label();
-            listEstado = new ListBox();
-            listCidade = new ListBox();
-            listPetshop = new ListBox();
             label4 = new Label();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox3 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)gridPets).BeginInit();
             SuspendLayout();
             // 
@@ -92,7 +92,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(44, 104);
+            label1.Location = new Point(52, 104);
             label1.Name = "label1";
             label1.Size = new Size(56, 21);
             label1.TabIndex = 4;
@@ -103,56 +103,24 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(44, 135);
+            label3.Location = new Point(50, 133);
             label3.Name = "label3";
             label3.Size = new Size(58, 21);
             label3.TabIndex = 6;
             label3.Text = "Cidade";
+            label3.Click += label3_Click;
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(35, 168);
+            label2.Location = new Point(43, 162);
             label2.Name = "label2";
             label2.Size = new Size(65, 21);
             label2.TabIndex = 8;
             label2.Text = "Petshop";
             label2.Click += label2_Click;
-            // 
-            // listEstado
-            // 
-            listEstado.Anchor = AnchorStyles.None;
-            listEstado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            listEstado.FormattingEnabled = true;
-            listEstado.ItemHeight = 21;
-            listEstado.Location = new Point(106, 104);
-            listEstado.Name = "listEstado";
-            listEstado.Size = new Size(94, 25);
-            listEstado.TabIndex = 9;
-            // 
-            // listCidade
-            // 
-            listCidade.Anchor = AnchorStyles.None;
-            listCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            listCidade.FormattingEnabled = true;
-            listCidade.ItemHeight = 21;
-            listCidade.Location = new Point(106, 135);
-            listCidade.Name = "listCidade";
-            listCidade.Size = new Size(94, 25);
-            listCidade.TabIndex = 10;
-            // 
-            // listPetshop
-            // 
-            listPetshop.Anchor = AnchorStyles.None;
-            listPetshop.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            listPetshop.FormattingEnabled = true;
-            listPetshop.ItemHeight = 21;
-            listPetshop.Location = new Point(106, 164);
-            listPetshop.Name = "listPetshop";
-            listPetshop.Size = new Size(94, 25);
-            listPetshop.TabIndex = 11;
             // 
             // label4
             // 
@@ -165,15 +133,43 @@
             label4.TabIndex = 12;
             label4.Text = "Tabela de Pets para Adoção";
             // 
+            // comboBox1
+            // 
+            comboBox1.Anchor = AnchorStyles.None;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "AC", "", "AL", "", "AM", "", "AP", "", "BA", "", "CE", "", "DF", "", "ES", "", "GO", "", "MA", "", "MG", "", "MS", "", "MT", "", "PA", "", "PB", "", "PE", "", "PI", "", "PR", "", "RJ", "", "RN", "", "RO", "", "RR", "", "RS", "", "SC", "", "SE", "", "SP", "", "TO" });
+            comboBox1.Location = new Point(114, 104);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(118, 23);
+            comboBox1.TabIndex = 13;
+            // 
+            // comboBox2
+            // 
+            comboBox2.Anchor = AnchorStyles.None;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(114, 133);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(118, 23);
+            comboBox2.TabIndex = 14;
+            // 
+            // comboBox3
+            // 
+            comboBox3.Anchor = AnchorStyles.None;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(114, 162);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(118, 23);
+            comboBox3.TabIndex = 15;
+            // 
             // FormPets
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBox3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
             Controls.Add(label4);
-            Controls.Add(listPetshop);
-            Controls.Add(listCidade);
-            Controls.Add(listEstado);
             Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -197,9 +193,9 @@
         private Label label1;
         private Label label3;
         private Label label2;
-        private ListBox listEstado;
-        private ListBox listCidade;
-        private ListBox listPetshop;
         private Label label4;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
     }
 }

@@ -29,16 +29,14 @@
         private void InitializeComponent()
         {
             label4 = new Label();
-            listPetshop = new ListBox();
-            listCidade = new ListBox();
-            listEstado = new ListBox();
-            label2 = new Label();
             label3 = new Label();
             label1 = new Label();
             gridPets = new DataGridView();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)gridPets).BeginInit();
             SuspendLayout();
             // 
@@ -52,51 +50,6 @@
             label4.Size = new Size(200, 28);
             label4.TabIndex = 23;
             label4.Text = "Tabela de PetShops ";
-            // 
-            // listPetshop
-            // 
-            listPetshop.Anchor = AnchorStyles.None;
-            listPetshop.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            listPetshop.FormattingEnabled = true;
-            listPetshop.ItemHeight = 21;
-            listPetshop.Location = new Point(114, 162);
-            listPetshop.Name = "listPetshop";
-            listPetshop.Size = new Size(94, 25);
-            listPetshop.TabIndex = 22;
-            // 
-            // listCidade
-            // 
-            listCidade.Anchor = AnchorStyles.None;
-            listCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            listCidade.FormattingEnabled = true;
-            listCidade.ItemHeight = 21;
-            listCidade.Location = new Point(114, 133);
-            listCidade.Name = "listCidade";
-            listCidade.Size = new Size(94, 25);
-            listCidade.TabIndex = 21;
-            // 
-            // listEstado
-            // 
-            listEstado.Anchor = AnchorStyles.None;
-            listEstado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            listEstado.FormattingEnabled = true;
-            listEstado.ItemHeight = 21;
-            listEstado.Location = new Point(114, 102);
-            listEstado.Name = "listEstado";
-            listEstado.Size = new Size(94, 25);
-            listEstado.TabIndex = 20;
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(36, 166);
-            label2.Name = "label2";
-            label2.Size = new Size(72, 21);
-            label2.TabIndex = 19;
-            label2.Text = "Petshops";
-            label2.Click += label2_Click_1;
             // 
             // label3
             // 
@@ -114,7 +67,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(52, 102);
+            label1.Location = new Point(52, 104);
             label1.Name = "label1";
             label1.Size = new Size(56, 21);
             label1.TabIndex = 17;
@@ -166,16 +119,33 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // comboBox2
+            // 
+            comboBox2.Anchor = AnchorStyles.None;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(114, 133);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(118, 23);
+            comboBox2.TabIndex = 25;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Anchor = AnchorStyles.None;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "AC", "", "AL", "", "AM", "", "AP", "", "BA", "", "CE", "", "DF", "", "ES", "", "GO", "", "MA", "", "MG", "", "MS", "", "MT", "", "PA", "", "PB", "", "PE", "", "PI", "", "PR", "", "RJ", "", "RN", "", "RO", "", "RR", "", "RS", "", "SC", "", "SE", "", "SP", "", "TO" });
+            comboBox1.Location = new Point(114, 104);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(118, 23);
+            comboBox1.TabIndex = 24;
+            // 
             // FormPetshop
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
             Controls.Add(label4);
-            Controls.Add(listPetshop);
-            Controls.Add(listCidade);
-            Controls.Add(listEstado);
-            Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(gridPets);
@@ -184,6 +154,7 @@
             Controls.Add(button1);
             Name = "FormPetshop";
             Text = "FormPetshop";
+            Load += FormPetshop_Load_1;
             ((System.ComponentModel.ISupportInitialize)gridPets).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -192,15 +163,13 @@
         #endregion
 
         private Label label4;
-        private ListBox listPetshop;
-        private ListBox listCidade;
-        private ListBox listEstado;
-        private Label label2;
         private Label label3;
         private Label label1;
         private DataGridView gridPets;
         private Button button3;
         private Button button2;
         private Button button1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox1;
     }
 }

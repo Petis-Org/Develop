@@ -39,5 +39,10 @@ namespace WinFormsApp1.Forms
             controlCadPet frm2 = new controlCadPet();
             frm2.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
