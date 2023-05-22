@@ -28,106 +28,113 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            textBox1 = new TextBox();
+            comboBox5 = new ComboBox();
+            label4 = new Label();
+            comboBox4 = new ComboBox();
+            label3 = new Label();
+            label2 = new Label();
+            button1 = new Button();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(136, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(152, 23);
-            this.textBox1.TabIndex = 45;
+            textBox1.Anchor = AnchorStyles.None;
+            textBox1.Location = new Point(136, 138);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(152, 23);
+            textBox1.TabIndex = 45;
             // 
             // comboBox5
             // 
-            this.comboBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(136, 59);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(152, 29);
-            this.comboBox5.TabIndex = 44;
+            comboBox5.Anchor = AnchorStyles.None;
+            comboBox5.DropDownHeight = 80;
+            comboBox5.DropDownWidth = 90;
+            comboBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox5.FormattingEnabled = true;
+            comboBox5.IntegralHeight = false;
+            comboBox5.Items.AddRange(new object[] { "Cirurgia", "Consulta", "Exames", "Vacinação", "Castração", "Internações", "Transfusões", "Imunização", "Procedimentos Especiais" });
+            comboBox5.Location = new Point(136, 59);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(152, 29);
+            comboBox5.TabIndex = 44;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(69, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 21);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Serviço";
+            label4.Anchor = AnchorStyles.None;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(69, 62);
+            label4.Name = "label4";
+            label4.Size = new Size(61, 21);
+            label4.TabIndex = 43;
+            label4.Text = "Serviço";
             // 
             // comboBox4
             // 
-            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(136, 94);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(152, 29);
-            this.comboBox4.TabIndex = 42;
+            comboBox4.Anchor = AnchorStyles.None;
+            comboBox4.DropDownHeight = 80;
+            comboBox4.DropDownWidth = 90;
+            comboBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox4.FormattingEnabled = true;
+            comboBox4.IntegralHeight = false;
+            comboBox4.Items.AddRange(new object[] { "Cobra", "Hamster", "Porquinho da India", "Cachorro", "Rato", "Gato", "Macaco", "Cobra", "Coelho", "Elefante", "Leão", "Tigre", "Cabra", "Cavalo", "Galinha", "Galo" });
+            comboBox4.Location = new Point(136, 94);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(152, 29);
+            comboBox4.TabIndex = 42;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(71, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 21);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "Animal";
+            label3.Anchor = AnchorStyles.None;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(71, 97);
+            label3.Name = "label3";
+            label3.Size = new Size(59, 21);
+            label3.TabIndex = 41;
+            label3.Text = "Animal";
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(81, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 21);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Preço";
+            label2.Anchor = AnchorStyles.None;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(81, 140);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 21);
+            label2.TabIndex = 40;
+            label2.Text = "Preço";
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(315, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 39);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Confirma";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Anchor = AnchorStyles.None;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(315, 179);
+            button1.Name = "button1";
+            button1.Size = new Size(122, 39);
+            button1.TabIndex = 39;
+            button1.Text = "Confirma";
+            button1.UseVisualStyleBackColor = true;
             // 
             // controlVetRequest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 293);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Name = "controlVetRequest";
-            this.Text = "controlVetRequest";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(540, 293);
+            Controls.Add(textBox1);
+            Controls.Add(comboBox5);
+            Controls.Add(label4);
+            Controls.Add(comboBox4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(button1);
+            Name = "controlVetRequest";
+            Text = "controlVetRequest";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
