@@ -36,7 +36,7 @@
             // 
             monthCalendar1.Anchor = AnchorStyles.None;
             monthCalendar1.CalendarDimensions = new Size(2, 2);
-            monthCalendar1.Location = new Point(176, 91);
+            monthCalendar1.Location = new Point(174, 91);
             monthCalendar1.Name = "monthCalendar1";
             monthCalendar1.TabIndex = 0;
             // 

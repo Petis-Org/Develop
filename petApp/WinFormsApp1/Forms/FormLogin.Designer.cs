@@ -126,6 +126,7 @@
             label3.Size = new Size(58, 21);
             label3.TabIndex = 17;
             label3.Text = "LOGIN";
+            label3.Click += label3_Click;
             // 
             // pictureBox2
             // 

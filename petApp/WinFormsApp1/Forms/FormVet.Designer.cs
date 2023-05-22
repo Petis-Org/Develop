@@ -53,6 +53,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
             label4.Location = new Point(195, 9);
             label4.Name = "label4";
             label4.Size = new Size(222, 28);
@@ -64,6 +65,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(7, 120);
             label3.Name = "label3";
             label3.Size = new Size(58, 21);
@@ -75,6 +77,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(9, 91);
             label1.Name = "label1";
             label1.Size = new Size(56, 21);
@@ -84,36 +87,48 @@
             // button3
             // 
             button3.Anchor = AnchorStyles.None;
+            button3.BackColor = SystemColors.ActiveCaption;
+            button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.White;
             button3.Location = new Point(660, 389);
             button3.Name = "button3";
             button3.Size = new Size(129, 49);
             button3.TabIndex = 15;
             button3.Text = "Informações";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.None;
+            button2.BackColor = SystemColors.ActiveCaption;
+            button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
             button2.Location = new Point(437, 389);
             button2.Name = "button2";
             button2.Size = new Size(129, 49);
             button2.TabIndex = 14;
             button2.Text = "Enviar Pedido";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(195, 389);
             button1.Name = "button1";
             button1.Size = new Size(129, 49);
             button1.TabIndex = 13;
             button1.Text = "Contate";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // comboBox2
@@ -144,7 +159,7 @@
             // 
             dataGridView2.Anchor = AnchorStyles.None;
             dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView2.BackgroundColor = SystemColors.InactiveCaption;
+            dataGridView2.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView2.BorderStyle = BorderStyle.None;
             dataGridView2.CellBorderStyle = DataGridViewCellBorderStyle.RaisedHorizontal;
             dataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -210,6 +225,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView2);
             Controls.Add(comboBox2);
