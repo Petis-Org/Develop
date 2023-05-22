@@ -29,7 +29,7 @@ namespace WinFormsApp1
             return ColorTranslator.FromHtml(color);
         }
 
-        private void ActivateButton(object btnSender) 
+        private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
             {
@@ -62,7 +62,8 @@ namespace WinFormsApp1
 
         private void OpenChildForm(Form childForm, object btnSender)
         {
-            if (activateForm != null) {
+            if (activateForm != null)
+            {
                 activateForm.Close();
             }
             ActivateButton(btnSender);
