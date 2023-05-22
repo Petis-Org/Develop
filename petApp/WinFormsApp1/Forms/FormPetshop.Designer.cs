@@ -96,7 +96,7 @@
             // 
             button2.Anchor = AnchorStyles.None;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(441, 389);
+            button2.Location = new Point(437, 389);
             button2.Name = "button2";
             button2.Size = new Size(129, 49);
             button2.TabIndex = 14;

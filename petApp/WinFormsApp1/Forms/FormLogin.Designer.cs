@@ -63,7 +63,7 @@
             textBox2.Anchor = AnchorStyles.None;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(66, 186);
+            textBox2.Location = new Point(66, 194);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(180, 18);
             textBox2.TabIndex = 1;
@@ -73,7 +73,7 @@
             textBox1.Anchor = AnchorStyles.None;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(66, 233);
+            textBox1.Location = new Point(67, 238);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(180, 22);
             textBox1.TabIndex = 2;
