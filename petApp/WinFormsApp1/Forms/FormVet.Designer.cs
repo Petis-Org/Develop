@@ -53,7 +53,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(195, 9);
             label4.Name = "label4";
             label4.Size = new Size(222, 28);
@@ -64,11 +64,11 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(7, 120);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(2, 120);
             label3.Name = "label3";
-            label3.Size = new Size(58, 21);
+            label3.Size = new Size(63, 21);
             label3.TabIndex = 18;
             label3.Text = "Cidade";
             // 
@@ -76,11 +76,11 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(9, 91);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(4, 91);
             label1.Name = "label1";
-            label1.Size = new Size(56, 21);
+            label1.Size = new Size(61, 21);
             label1.TabIndex = 17;
             label1.Text = "Estado";
             // 
@@ -159,7 +159,7 @@
             // 
             dataGridView2.Anchor = AnchorStyles.None;
             dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView2.BackgroundColor = SystemColors.ActiveCaption;
+            dataGridView2.BackgroundColor = SystemColors.InactiveCaption;
             dataGridView2.BorderStyle = BorderStyle.None;
             dataGridView2.CellBorderStyle = DataGridViewCellBorderStyle.RaisedHorizontal;
             dataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -225,7 +225,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.InactiveCaption;
+            BackColor = Color.GhostWhite;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView2);
             Controls.Add(comboBox2);
