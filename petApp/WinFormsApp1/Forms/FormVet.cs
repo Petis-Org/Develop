@@ -44,5 +44,17 @@ namespace WinFormsApp1.Forms
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            controlVetRequest frm2 = new controlVetRequest();
+            frm2.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            controlVetContact frm = new controlVetContact();
+            frm.Show();
+        }
     }
 }

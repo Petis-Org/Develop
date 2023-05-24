@@ -59,5 +59,17 @@ namespace WinFormsApp1.Forms
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            controlPetshopRequest frm2 = new controlPetshopRequest();
+            frm2.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            controlPetshopContact frm = new controlPetshopContact();
+            frm.Show();
+        }
     }
 }
