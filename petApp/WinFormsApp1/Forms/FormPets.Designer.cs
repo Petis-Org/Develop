@@ -53,47 +53,59 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(195, 389);
             button1.Name = "button1";
             button1.Padding = new Padding(10, 7, 10, 7);
             button1.Size = new Size(129, 49);
             button1.TabIndex = 0;
             button1.Text = "Adote";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.None;
+            button2.BackColor = SystemColors.ActiveCaption;
+            button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
             button2.Location = new Point(437, 389);
             button2.Name = "button2";
             button2.Size = new Size(129, 49);
             button2.TabIndex = 1;
             button2.Text = "Adicionar Pet";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.Anchor = AnchorStyles.None;
+            button3.BackColor = SystemColors.ActiveCaption;
+            button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.White;
             button3.Location = new Point(660, 389);
             button3.Name = "button3";
             button3.Size = new Size(129, 49);
             button3.TabIndex = 2;
             button3.Text = "Fotos";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(9, 91);
             label1.Name = "label1";
-            label1.Size = new Size(56, 21);
+            label1.Size = new Size(61, 21);
             label1.TabIndex = 4;
             label1.Text = "Estado";
             // 
@@ -101,10 +113,10 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(7, 120);
             label3.Name = "label3";
-            label3.Size = new Size(58, 21);
+            label3.Size = new Size(63, 21);
             label3.TabIndex = 6;
             label3.Text = "Cidade";
             label3.Click += label3_Click;
@@ -113,10 +125,10 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(0, 149);
             label2.Name = "label2";
-            label2.Size = new Size(65, 21);
+            label2.Size = new Size(72, 21);
             label2.TabIndex = 8;
             label2.Text = "Petshop";
             label2.Click += label2_Click;
