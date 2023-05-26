@@ -34,13 +34,13 @@
             label4 = new Label();
             comboBox4 = new ComboBox();
             label3 = new Label();
-            comboBox3 = new ComboBox();
             label2 = new Label();
             comboBox2 = new ComboBox();
             label1 = new Label();
-            comboBox1 = new ComboBox();
             button1 = new Button();
             Raça = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // comboBox6
@@ -55,12 +55,13 @@
             comboBox6.Name = "comboBox6";
             comboBox6.Size = new Size(152, 29);
             comboBox6.TabIndex = 26;
+            comboBox6.SelectedIndexChanged += comboBox6_SelectedIndexChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(117, 271);
+            label5.Location = new Point(117, 268);
             label5.Name = "label5";
             label5.Size = new Size(153, 21);
             label5.TabIndex = 25;
@@ -103,29 +104,17 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(227, 241);
+            label3.Location = new Point(227, 236);
             label3.Name = "label3";
             label3.Size = new Size(43, 21);
             label3.TabIndex = 21;
             label3.Text = "Sexo";
             // 
-            // comboBox3
-            // 
-            comboBox3.DropDownHeight = 80;
-            comboBox3.DropDownWidth = 90;
-            comboBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.IntegralHeight = false;
-            comboBox3.Location = new Point(276, 198);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(152, 29);
-            comboBox3.TabIndex = 20;
-            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(212, 206);
+            label2.Location = new Point(211, 202);
             label2.Name = "label2";
             label2.Size = new Size(58, 21);
             label2.TabIndex = 19;
@@ -151,18 +140,6 @@
             label1.TabIndex = 17;
             label1.Text = "Estado";
             // 
-            // comboBox1
-            // 
-            comboBox1.DropDownHeight = 80;
-            comboBox1.DropDownWidth = 90;
-            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.IntegralHeight = false;
-            comboBox1.Location = new Point(276, 128);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(152, 29);
-            comboBox1.TabIndex = 16;
-            // 
             // button1
             // 
             button1.FlatStyle = FlatStyle.Flat;
@@ -173,6 +150,7 @@
             button1.TabIndex = 15;
             button1.Text = "Confirma";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Raça
             // 
@@ -184,22 +162,38 @@
             Raça.TabIndex = 14;
             Raça.Text = "Raça";
             // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.None;
+            textBox1.Location = new Point(276, 202);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(152, 23);
+            textBox1.TabIndex = 27;
+            // 
+            // textBox2
+            // 
+            textBox2.Anchor = AnchorStyles.None;
+            textBox2.Location = new Point(276, 133);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(152, 23);
+            textBox2.TabIndex = 28;
+            // 
             // controlCadPet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(716, 403);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(comboBox6);
             Controls.Add(label5);
             Controls.Add(comboBox5);
             Controls.Add(label4);
             Controls.Add(comboBox4);
             Controls.Add(label3);
-            Controls.Add(comboBox3);
             Controls.Add(label2);
             Controls.Add(comboBox2);
             Controls.Add(label1);
-            Controls.Add(comboBox1);
             Controls.Add(button1);
             Controls.Add(Raça);
             Name = "controlCadPet";
@@ -217,12 +211,12 @@
         private Label label4;
         private ComboBox comboBox4;
         private Label label3;
-        private ComboBox comboBox3;
         private Label label2;
         private ComboBox comboBox2;
         private Label label1;
-        private ComboBox comboBox1;
         private Button button1;
         private Label Raça;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
