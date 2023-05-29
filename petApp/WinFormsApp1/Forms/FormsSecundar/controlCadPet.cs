@@ -15,15 +15,6 @@ namespace WinFormsApp1.Forms.FormsSecundar
 {
     public partial class controlCadPet : Form
     {
-        public class Pets
-        {
-            public string Animal { get; set; }
-            public string Raca { get; set; }
-            public string Estado { get; set; }
-            public string Cidade { get; set; }
-            public string Sexo { get; set; }
-            public string Tempo { get; set; }
-        }
 
         public void Add(Pets pets)
         {

@@ -14,15 +14,6 @@ namespace WinFormsApp1.Forms
 {
     public partial class FormPets : Form
     {
-        public class Pets
-        {
-            public string Animal { get; set; }
-            public string Raca { get; set; }
-            public string Estado { get; set; }
-            public string Cidade { get; set; }
-            public string Sexo { get; set; }
-            public string Tempo { get; set; }
-        }
 
         public List<Pets> Leo2()
         {
@@ -79,10 +70,6 @@ namespace WinFormsApp1.Forms
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView2.Rows.Add(e.RowIndex, e.ColumnIndex);
-
-            var pet = LeoLegal();
-            Leo2(pet);
 
         }
 
@@ -101,6 +88,15 @@ namespace WinFormsApp1.Forms
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormPets_Load_1(object sender, EventArgs e)
+        {
+            var pets = Leo2();
+            foreach(var pet in pets)
+            {
+                dataGridView2.Rows.Add(pet.Animal, pet.Estado, pet.Sexo, pet.Tempo);
+            }
         }
     }
 }

@@ -259,6 +259,7 @@
             Controls.Add(button1);
             Name = "FormPets";
             Text = "FormPets";
+            Load += FormPets_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
