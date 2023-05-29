@@ -13,6 +13,15 @@ namespace WinFormsApp1.Forms
 {
     public partial class FormPets : Form
     {
+        public class Pets
+        {
+            public string animal { get; set; }
+            public string estado { get; set; }
+            public string sexo { get; set; }
+            public string tempo { get; set; }
+        }
+
+
         public FormPets()
         {
             InitializeComponent();

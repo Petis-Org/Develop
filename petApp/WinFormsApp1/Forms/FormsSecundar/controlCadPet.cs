@@ -29,7 +29,6 @@ namespace WinFormsApp1.Forms.FormsSecundar
         {
             try
             {
-
                 string queryCad = "INSERT INTO PETSADOTE " +
                 $"VALUES ('{pets.Animal}', '{pets.Raca}', '{pets.Estado}', '{pets.Cidade}', '{pets.Sexo}','{pets.Tempo}')";
                 var connection = new petsCad();
