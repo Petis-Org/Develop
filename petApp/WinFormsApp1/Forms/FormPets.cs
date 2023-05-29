@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dbClassLibra;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,34 @@ namespace WinFormsApp1.Forms
     {
         public class Pets
         {
-            public string animal { get; set; }
-            public string estado { get; set; }
-            public string sexo { get; set; }
-            public string tempo { get; set; }
+            public string Animal { get; set; }
+            public string Raca { get; set; }
+            public string Estado { get; set; }
+            public string Cidade { get; set; }
+            public string Sexo { get; set; }
+            public string Tempo { get; set; }
         }
 
+        public List<Pets> Leo2()
+        {
+            string querySelect = "SELECT * FROM PETSADOTE";
+            var connection = new petsCad();
+            var list = connection.SelectCommand(querySelect);
+            return list;
+        }
+
+        private Pets LeoLegal()
+        {
+            var pet = new Pets
+            {
+                Animal = animal.HeaderText,
+                Estado = estado.HeaderText,
+                Sexo = sexo.HeaderText,
+                Tempo = tempo.HeaderText
+            };
+
+            return pet;
+        }
 
         public FormPets()
         {
@@ -57,6 +80,10 @@ namespace WinFormsApp1.Forms
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dataGridView2.Rows.Add(e.RowIndex, e.ColumnIndex);
+
+            var pet = LeoLegal();
+            Leo2(pet);
+
         }
 
         private void button2_Click_1(object sender, EventArgs e)

@@ -43,10 +43,10 @@
             comboBox2 = new ComboBox();
             comboBox3 = new ComboBox();
             dataGridView2 = new DataGridView();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            animal = new DataGridViewTextBoxColumn();
+            estado = new DataGridViewTextBoxColumn();
+            sexo = new DataGridViewTextBoxColumn();
+            tempo = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -191,7 +191,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { animal, estado, sexo, tempo });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = SystemColors.Window;
             dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -219,27 +219,27 @@
             dataGridView2.TabIndex = 28;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
-            // dataGridViewTextBoxColumn1
+            // animal
             // 
             dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewTextBoxColumn1.HeaderText = "Animal";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            animal.DefaultCellStyle = dataGridViewCellStyle2;
+            animal.HeaderText = "Animal";
+            animal.Name = "animal";
             // 
-            // dataGridViewTextBoxColumn2
+            // estado
             // 
-            dataGridViewTextBoxColumn2.HeaderText = "Estado";
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            estado.HeaderText = "Estado";
+            estado.Name = "estado";
             // 
-            // dataGridViewTextBoxColumn3
+            // sexo
             // 
-            dataGridViewTextBoxColumn3.HeaderText = "Sexo";
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            sexo.HeaderText = "Sexo";
+            sexo.Name = "sexo";
             // 
-            // dataGridViewTextBoxColumn4
+            // tempo
             // 
-            dataGridViewTextBoxColumn4.HeaderText = "Tempo";
-            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            tempo.HeaderText = "Tempo";
+            tempo.Name = "tempo";
             // 
             // FormPets
             // 
@@ -277,9 +277,9 @@
         private ComboBox comboBox2;
         private ComboBox comboBox3;
         private DataGridView dataGridView2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn animal;
+        private DataGridViewTextBoxColumn estado;
+        private DataGridViewTextBoxColumn sexo;
+        private DataGridViewTextBoxColumn tempo;
     }
 }

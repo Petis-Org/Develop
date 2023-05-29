@@ -28,7 +28,7 @@ namespace dbClassLibra
                 command.ExecuteNonQuery();
             }
         }
-        public void SelectCommand(string queryString)
+        public List<Pets> SelectCommand(string queryString)
         {
             var list = new List<Pets>();
 
@@ -50,7 +50,10 @@ namespace dbClassLibra
                         Tempo = Reader.GetString(5)
                     });
                 }
+
+                return list;
             }
+
         }
     }
 }
