@@ -93,7 +93,7 @@ namespace WinFormsApp1.Forms
         private void FormPets_Load_1(object sender, EventArgs e)
         {
             var pets = Leo2();
-            foreach(var pet in pets)
+            foreach (var pet in pets)
             {
                 dataGridView2.Rows.Add(pet.Animal, pet.Estado, pet.Sexo, pet.Tempo);
             }

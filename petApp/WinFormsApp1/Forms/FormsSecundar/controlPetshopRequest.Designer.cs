@@ -28,72 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            comboBox5 = new ComboBox();
+            textPreco = new TextBox();
+            comboServ = new ComboBox();
             label4 = new Label();
-            comboBox4 = new ComboBox();
+            comboAnimal = new ComboBox();
             label3 = new Label();
             label2 = new Label();
-            comboBox2 = new ComboBox();
-            label1 = new Label();
-            comboBox1 = new ComboBox();
+            comboQuant = new ComboBox();
+            lblQuant = new Label();
+            comboMarca = new ComboBox();
             button1 = new Button();
-            Raça = new Label();
+            lblMarc = new Label();
+            comboMed = new ComboBox();
+            lblMed = new Label();
+            comboBrinquedos = new ComboBox();
+            lblBrinq = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // textPreco
             // 
-            textBox1.Location = new Point(297, 257);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(152, 23);
-            textBox1.TabIndex = 38;
+            textPreco.Location = new Point(331, 275);
+            textPreco.Name = "textPreco";
+            textPreco.ReadOnly = true;
+            textPreco.Size = new Size(152, 23);
+            textPreco.TabIndex = 38;
             // 
-            // comboBox5
+            // comboServ
             // 
-            comboBox5.Anchor = AnchorStyles.None;
-            comboBox5.DropDownHeight = 80;
-            comboBox5.DropDownWidth = 90;
-            comboBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox5.FormattingEnabled = true;
-            comboBox5.IntegralHeight = false;
-            comboBox5.Items.AddRange(new object[] { "Ração", "Banho e tosa", "Cauterização", "Penteados", "Hidratações", "Terapias", "Adestramento", "Brinquedos", "Medicamentos", "Odontologia" });
-            comboBox5.Location = new Point(297, 183);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(152, 29);
-            comboBox5.TabIndex = 37;
+            comboServ.Anchor = AnchorStyles.None;
+            comboServ.DropDownHeight = 80;
+            comboServ.DropDownWidth = 90;
+            comboServ.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboServ.FormattingEnabled = true;
+            comboServ.IntegralHeight = false;
+            comboServ.Items.AddRange(new object[] { "Ração", "Banho e tosa", "Cauterização", "Penteados", "Hidratações", "Terapias", "Adestramento", "Brinquedos", "Medicamentos", "Odontologia" });
+            comboServ.Location = new Point(331, 138);
+            comboServ.Name = "comboServ";
+            comboServ.Size = new Size(152, 29);
+            comboServ.TabIndex = 37;
+            comboServ.SelectedIndexChanged += comboBox5_SelectedIndexChanged;
             // 
             // label4
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(230, 183);
+            label4.Location = new Point(369, 114);
             label4.Name = "label4";
             label4.Size = new Size(61, 21);
             label4.TabIndex = 36;
             label4.Text = "Serviço";
             // 
-            // comboBox4
+            // comboAnimal
             // 
-            comboBox4.Anchor = AnchorStyles.None;
-            comboBox4.DropDownHeight = 80;
-            comboBox4.DropDownWidth = 90;
-            comboBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox4.FormattingEnabled = true;
-            comboBox4.IntegralHeight = false;
-            comboBox4.Items.AddRange(new object[] { "Cachorro", "Gato", "Coelho", "Cobra", "Macaco", "Jabuti", "Tartaruga", "Cágado" });
-            comboBox4.Location = new Point(297, 218);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(152, 29);
-            comboBox4.TabIndex = 35;
+            comboAnimal.Anchor = AnchorStyles.None;
+            comboAnimal.DropDownHeight = 80;
+            comboAnimal.DropDownWidth = 90;
+            comboAnimal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboAnimal.FormattingEnabled = true;
+            comboAnimal.IntegralHeight = false;
+            comboAnimal.Items.AddRange(new object[] { "Cachorro", "Gato", "Coelho", "Cobra", "Macaco", "Jabuti", "Tartaruga", "Cágado" });
+            comboAnimal.Location = new Point(331, 199);
+            comboAnimal.Name = "comboAnimal";
+            comboAnimal.Size = new Size(152, 29);
+            comboAnimal.TabIndex = 35;
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(232, 218);
+            label3.Location = new Point(369, 175);
             label3.Name = "label3";
             label3.Size = new Size(59, 21);
             label3.TabIndex = 34;
@@ -104,82 +109,136 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(242, 259);
+            label2.Location = new Point(379, 251);
             label2.Name = "label2";
             label2.Size = new Size(49, 21);
             label2.TabIndex = 33;
             label2.Text = "Preço";
             // 
-            // comboBox2
+            // comboQuant
             // 
-            comboBox2.Anchor = AnchorStyles.None;
-            comboBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(636, 47);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(152, 29);
-            comboBox2.TabIndex = 32;
+            comboQuant.Anchor = AnchorStyles.None;
+            comboQuant.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboQuant.FormattingEnabled = true;
+            comboQuant.Location = new Point(173, 199);
+            comboQuant.Name = "comboQuant";
+            comboQuant.Size = new Size(152, 29);
+            comboQuant.TabIndex = 32;
+            comboQuant.Visible = false;
             // 
-            // label1
+            // lblQuant
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(539, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(91, 21);
-            label1.TabIndex = 31;
-            label1.Text = "Quantidade";
+            lblQuant.Anchor = AnchorStyles.None;
+            lblQuant.AutoSize = true;
+            lblQuant.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblQuant.Location = new Point(201, 175);
+            lblQuant.Name = "lblQuant";
+            lblQuant.Size = new Size(91, 21);
+            lblQuant.TabIndex = 31;
+            lblQuant.Text = "Quantidade";
+            lblQuant.Visible = false;
             // 
-            // comboBox1
+            // comboMarca
             // 
-            comboBox1.Anchor = AnchorStyles.None;
-            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(636, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(152, 29);
-            comboBox1.TabIndex = 30;
+            comboMarca.Anchor = AnchorStyles.None;
+            comboMarca.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboMarca.FormattingEnabled = true;
+            comboMarca.Location = new Point(173, 138);
+            comboMarca.Name = "comboMarca";
+            comboMarca.Size = new Size(152, 29);
+            comboMarca.TabIndex = 30;
+            comboMarca.Visible = false;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(476, 298);
+            button1.Location = new Point(331, 304);
             button1.Name = "button1";
-            button1.Size = new Size(122, 39);
+            button1.Size = new Size(152, 39);
             button1.TabIndex = 29;
             button1.Text = "Confirma";
             button1.UseVisualStyleBackColor = true;
             // 
-            // Raça
+            // lblMarc
             // 
-            Raça.Anchor = AnchorStyles.None;
-            Raça.AutoSize = true;
-            Raça.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Raça.Location = new Point(577, 12);
-            Raça.Name = "Raça";
-            Raça.Size = new Size(53, 21);
-            Raça.TabIndex = 28;
-            Raça.Text = "Marca";
+            lblMarc.Anchor = AnchorStyles.None;
+            lblMarc.AutoSize = true;
+            lblMarc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMarc.Location = new Point(219, 114);
+            lblMarc.Name = "lblMarc";
+            lblMarc.Size = new Size(53, 21);
+            lblMarc.TabIndex = 28;
+            lblMarc.Text = "Marca";
+            lblMarc.Visible = false;
+            // 
+            // comboMed
+            // 
+            comboMed.Anchor = AnchorStyles.None;
+            comboMed.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboMed.FormattingEnabled = true;
+            comboMed.Location = new Point(489, 138);
+            comboMed.Name = "comboMed";
+            comboMed.Size = new Size(152, 29);
+            comboMed.TabIndex = 40;
+            comboMed.Visible = false;
+            // 
+            // lblMed
+            // 
+            lblMed.Anchor = AnchorStyles.None;
+            lblMed.AutoSize = true;
+            lblMed.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMed.Location = new Point(505, 114);
+            lblMed.Name = "lblMed";
+            lblMed.Size = new Size(112, 21);
+            lblMed.TabIndex = 39;
+            lblMed.Text = "Medicamentos";
+            lblMed.Visible = false;
+            // 
+            // comboBrinquedos
+            // 
+            comboBrinquedos.Anchor = AnchorStyles.None;
+            comboBrinquedos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBrinquedos.FormattingEnabled = true;
+            comboBrinquedos.Location = new Point(489, 199);
+            comboBrinquedos.Name = "comboBrinquedos";
+            comboBrinquedos.Size = new Size(152, 29);
+            comboBrinquedos.TabIndex = 42;
+            comboBrinquedos.Visible = false;
+            // 
+            // lblBrinq
+            // 
+            lblBrinq.Anchor = AnchorStyles.None;
+            lblBrinq.AutoSize = true;
+            lblBrinq.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBrinq.Location = new Point(518, 175);
+            lblBrinq.Name = "lblBrinq";
+            lblBrinq.Size = new Size(89, 21);
+            lblBrinq.TabIndex = 41;
+            lblBrinq.Text = "Brinquedos";
+            lblBrinq.Visible = false;
             // 
             // controlPetshopRequest
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox5);
+            Controls.Add(comboBrinquedos);
+            Controls.Add(lblBrinq);
+            Controls.Add(comboMed);
+            Controls.Add(lblMed);
+            Controls.Add(textPreco);
+            Controls.Add(comboServ);
             Controls.Add(label4);
-            Controls.Add(comboBox4);
+            Controls.Add(comboAnimal);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(comboBox2);
-            Controls.Add(label1);
-            Controls.Add(comboBox1);
+            Controls.Add(comboQuant);
+            Controls.Add(lblQuant);
+            Controls.Add(comboMarca);
             Controls.Add(button1);
-            Controls.Add(Raça);
+            Controls.Add(lblMarc);
             Name = "controlPetshopRequest";
             Load += controlPetshopRequest_Load;
             ResumeLayout(false);
@@ -188,16 +247,20 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private ComboBox comboBox5;
+        private TextBox textPreco;
+        private ComboBox comboServ;
         private Label label4;
-        private ComboBox comboBox4;
+        private ComboBox comboAnimal;
         private Label label3;
         private Label label2;
-        private ComboBox comboBox2;
-        private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox comboQuant;
+        private Label lblQuant;
+        private ComboBox comboMarca;
         private Button button1;
-        private Label Raça;
+        private Label lblMarc;
+        private ComboBox comboMed;
+        private Label lblMed;
+        private ComboBox comboBrinquedos;
+        private Label lblBrinq;
     }
 }

@@ -12,8 +12,8 @@ namespace WinFormsApp1.Forms
 {
     public partial class FormLogin : Form
     {
-        private string username = "CaioPedroNat";
-        private string password = "LeoGostoso123";
+        private string username = "aa";
+        private string password = "leo";
         public FormLogin()
         {
             InitializeComponent();
