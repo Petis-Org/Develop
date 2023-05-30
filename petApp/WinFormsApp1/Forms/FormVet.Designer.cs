@@ -35,7 +35,6 @@
             label4 = new Label();
             label3 = new Label();
             label1 = new Label();
-            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             comboBox2 = new ComboBox();
@@ -83,21 +82,6 @@
             label1.Size = new Size(61, 21);
             label1.TabIndex = 17;
             label1.Text = "Estado";
-            // 
-            // button3
-            // 
-            button3.Anchor = AnchorStyles.None;
-            button3.BackColor = SystemColors.ActiveCaption;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(660, 389);
-            button3.Name = "button3";
-            button3.Size = new Size(129, 49);
-            button3.TabIndex = 15;
-            button3.Text = "Informações";
-            button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -198,6 +182,7 @@
             dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView2.RowHeadersVisible = false;
             dataGridView2.RowTemplate.Height = 25;
+            dataGridView2.RowTemplate.ReadOnly = true;
             dataGridView2.Size = new Size(594, 343);
             dataGridView2.TabIndex = 29;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
@@ -212,15 +197,19 @@
             // 
             // avaliacao
             // 
+            avaliacao.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
             avaliacao.HeaderText = "Avaliação";
             avaliacao.Name = "avaliacao";
             avaliacao.ReadOnly = true;
+            avaliacao.Width = 102;
             // 
             // Telefone
             // 
+            Telefone.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
             Telefone.HeaderText = "Telefone";
             Telefone.Name = "Telefone";
             Telefone.ReadOnly = true;
+            Telefone.Width = 96;
             // 
             // Email
             // 
@@ -240,7 +229,6 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label1);
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "FormVet";
@@ -256,7 +244,6 @@
         private Label label4;
         private Label label3;
         private Label label1;
-        private Button button3;
         private Button button2;
         private Button button1;
         private ComboBox comboBox2;
