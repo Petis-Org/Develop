@@ -16,4 +16,12 @@ namespace WinFormsApp1
             public string Tempo { get; set; }
      
     }
+
+    public class Vet
+    {
+        public string Nome { get; set; }
+        public double Avaliacao { get; set; }
+        public string Telefone { get; set; }
+        public string Email { get; set; }
+    }
 }

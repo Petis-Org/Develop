@@ -159,6 +159,8 @@
             // 
             // dataGridView2
             // 
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.Anchor = AnchorStyles.None;
             dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView2.BackgroundColor = SystemColors.InactiveCaption;
@@ -187,6 +189,7 @@
             dataGridView2.GridColor = SystemColors.ControlDarkDark;
             dataGridView2.Location = new Point(208, 40);
             dataGridView2.Name = "dataGridView2";
+            dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = SystemColors.ActiveCaptionText;
@@ -208,21 +211,25 @@
             animal.DefaultCellStyle = dataGridViewCellStyle2;
             animal.HeaderText = "Animal";
             animal.Name = "animal";
+            animal.ReadOnly = true;
             // 
             // estado
             // 
             estado.HeaderText = "Estado";
             estado.Name = "estado";
+            estado.ReadOnly = true;
             // 
             // sexo
             // 
             sexo.HeaderText = "Sexo";
             sexo.Name = "sexo";
+            sexo.ReadOnly = true;
             // 
             // tempo
             // 
             tempo.HeaderText = "Tempo";
             tempo.Name = "tempo";
+            tempo.ReadOnly = true;
             // 
             // FormPets
             // 

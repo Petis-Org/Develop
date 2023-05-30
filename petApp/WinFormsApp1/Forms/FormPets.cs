@@ -23,19 +23,6 @@ namespace WinFormsApp1.Forms
             return list;
         }
 
-        private Pets LeoLegal()
-        {
-            var pet = new Pets
-            {
-                Animal = animal.HeaderText,
-                Estado = estado.HeaderText,
-                Sexo = sexo.HeaderText,
-                Tempo = tempo.HeaderText
-            };
-
-            return pet;
-        }
-
         public FormPets()
         {
             InitializeComponent();
