@@ -37,13 +37,13 @@
             label1 = new Label();
             button2 = new Button();
             button1 = new Button();
-            comboBox2 = new ComboBox();
             comboBox1 = new ComboBox();
             dataGridView2 = new DataGridView();
             nome = new DataGridViewTextBoxColumn();
             avaliacao = new DataGridViewTextBoxColumn();
             Telefone = new DataGridViewTextBoxColumn();
             Email = new DataGridViewTextBoxColumn();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -91,9 +91,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(437, 389);
+            button2.Location = new Point(552, 389);
             button2.Name = "button2";
-            button2.Size = new Size(129, 49);
+            button2.Size = new Size(237, 49);
             button2.TabIndex = 14;
             button2.Text = "Enviar Pedido";
             button2.UseVisualStyleBackColor = false;
@@ -109,20 +109,11 @@
             button1.ForeColor = Color.White;
             button1.Location = new Point(195, 389);
             button1.Name = "button1";
-            button1.Size = new Size(129, 49);
+            button1.Size = new Size(237, 49);
             button1.TabIndex = 13;
             button1.Text = "Contate";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
-            // 
-            // comboBox2
-            // 
-            comboBox2.Anchor = AnchorStyles.None;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(71, 120);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(118, 23);
-            comboBox2.TabIndex = 25;
             // 
             // comboBox1
             // 
@@ -182,7 +173,6 @@
             dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView2.RowHeadersVisible = false;
             dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.RowTemplate.ReadOnly = true;
             dataGridView2.Size = new Size(594, 343);
             dataGridView2.TabIndex = 29;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
@@ -217,14 +207,22 @@
             Email.Name = "Email";
             Email.ReadOnly = true;
             // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.None;
+            textBox1.Location = new Point(71, 120);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(118, 23);
+            textBox1.TabIndex = 30;
+            // 
             // FormVet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GhostWhite;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(dataGridView2);
-            Controls.Add(comboBox2);
             Controls.Add(comboBox1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -246,12 +244,12 @@
         private Label label1;
         private Button button2;
         private Button button1;
-        private ComboBox comboBox2;
         private ComboBox comboBox1;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn nome;
         private DataGridViewTextBoxColumn avaliacao;
         private DataGridViewTextBoxColumn Telefone;
         private DataGridViewTextBoxColumn Email;
+        private TextBox textBox1;
     }
 }

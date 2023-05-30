@@ -47,7 +47,7 @@
             // 
             // textPreco
             // 
-            textPreco.Location = new Point(331, 275);
+            textPreco.Location = new Point(240, 275);
             textPreco.Name = "textPreco";
             textPreco.ReadOnly = true;
             textPreco.Size = new Size(152, 23);
@@ -62,7 +62,7 @@
             comboServ.FormattingEnabled = true;
             comboServ.IntegralHeight = false;
             comboServ.Items.AddRange(new object[] { "Ração", "Banho e tosa", "Cauterização", "Penteados", "Hidratações", "Terapias", "Adestramento", "Brinquedos", "Medicamentos", "Odontologia" });
-            comboServ.Location = new Point(331, 138);
+            comboServ.Location = new Point(240, 138);
             comboServ.Name = "comboServ";
             comboServ.Size = new Size(152, 29);
             comboServ.TabIndex = 37;
@@ -73,7 +73,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(369, 114);
+            label4.Location = new Point(278, 114);
             label4.Name = "label4";
             label4.Size = new Size(61, 21);
             label4.TabIndex = 36;
@@ -88,7 +88,7 @@
             comboAnimal.FormattingEnabled = true;
             comboAnimal.IntegralHeight = false;
             comboAnimal.Items.AddRange(new object[] { "Cachorro", "Gato", "Coelho", "Cobra", "Macaco", "Jabuti", "Tartaruga", "Cágado" });
-            comboAnimal.Location = new Point(331, 199);
+            comboAnimal.Location = new Point(240, 199);
             comboAnimal.Name = "comboAnimal";
             comboAnimal.Size = new Size(152, 29);
             comboAnimal.TabIndex = 35;
@@ -98,7 +98,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(369, 175);
+            label3.Location = new Point(278, 175);
             label3.Name = "label3";
             label3.Size = new Size(59, 21);
             label3.TabIndex = 34;
@@ -109,7 +109,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(379, 251);
+            label2.Location = new Point(288, 251);
             label2.Name = "label2";
             label2.Size = new Size(49, 21);
             label2.TabIndex = 33;
@@ -120,7 +120,7 @@
             comboQuant.Anchor = AnchorStyles.None;
             comboQuant.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboQuant.FormattingEnabled = true;
-            comboQuant.Location = new Point(173, 199);
+            comboQuant.Location = new Point(398, 199);
             comboQuant.Name = "comboQuant";
             comboQuant.Size = new Size(152, 29);
             comboQuant.TabIndex = 32;
@@ -131,7 +131,7 @@
             lblQuant.Anchor = AnchorStyles.None;
             lblQuant.AutoSize = true;
             lblQuant.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblQuant.Location = new Point(201, 175);
+            lblQuant.Location = new Point(426, 175);
             lblQuant.Name = "lblQuant";
             lblQuant.Size = new Size(91, 21);
             lblQuant.TabIndex = 31;
@@ -143,7 +143,7 @@
             comboMarca.Anchor = AnchorStyles.None;
             comboMarca.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboMarca.FormattingEnabled = true;
-            comboMarca.Location = new Point(173, 138);
+            comboMarca.Location = new Point(398, 138);
             comboMarca.Name = "comboMarca";
             comboMarca.Size = new Size(152, 29);
             comboMarca.TabIndex = 30;
@@ -154,7 +154,7 @@
             button1.Anchor = AnchorStyles.None;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(331, 304);
+            button1.Location = new Point(240, 304);
             button1.Name = "button1";
             button1.Size = new Size(152, 39);
             button1.TabIndex = 29;
@@ -166,7 +166,7 @@
             lblMarc.Anchor = AnchorStyles.None;
             lblMarc.AutoSize = true;
             lblMarc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMarc.Location = new Point(219, 114);
+            lblMarc.Location = new Point(444, 114);
             lblMarc.Name = "lblMarc";
             lblMarc.Size = new Size(53, 21);
             lblMarc.TabIndex = 28;
@@ -178,7 +178,7 @@
             comboMed.Anchor = AnchorStyles.None;
             comboMed.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboMed.FormattingEnabled = true;
-            comboMed.Location = new Point(489, 138);
+            comboMed.Location = new Point(398, 138);
             comboMed.Name = "comboMed";
             comboMed.Size = new Size(152, 29);
             comboMed.TabIndex = 40;
@@ -189,7 +189,7 @@
             lblMed.Anchor = AnchorStyles.None;
             lblMed.AutoSize = true;
             lblMed.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMed.Location = new Point(505, 114);
+            lblMed.Location = new Point(414, 114);
             lblMed.Name = "lblMed";
             lblMed.Size = new Size(112, 21);
             lblMed.TabIndex = 39;
@@ -201,7 +201,7 @@
             comboBrinquedos.Anchor = AnchorStyles.None;
             comboBrinquedos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBrinquedos.FormattingEnabled = true;
-            comboBrinquedos.Location = new Point(489, 199);
+            comboBrinquedos.Location = new Point(398, 199);
             comboBrinquedos.Name = "comboBrinquedos";
             comboBrinquedos.Size = new Size(152, 29);
             comboBrinquedos.TabIndex = 42;
@@ -212,7 +212,7 @@
             lblBrinq.Anchor = AnchorStyles.None;
             lblBrinq.AutoSize = true;
             lblBrinq.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBrinq.Location = new Point(518, 175);
+            lblBrinq.Location = new Point(427, 175);
             lblBrinq.Name = "lblBrinq";
             lblBrinq.Size = new Size(89, 21);
             lblBrinq.TabIndex = 41;

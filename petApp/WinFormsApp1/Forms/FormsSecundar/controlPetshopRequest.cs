@@ -21,16 +21,35 @@ namespace WinFormsApp1.Forms.FormsSecundar
                 lblMarc.Visible = true;
                 comboQuant.Visible = true;
                 lblQuant.Visible = true;
+
+                comboBrinquedos.Visible = false;
+                lblBrinq.Visible = false;
+                comboMed.Visible = false;
+                lblMed.Visible = false;
             }
             else if (value == "Brinquedos")
             {
                 comboBrinquedos.Visible = true;
                 lblBrinq.Visible = true;
+
+                comboMarca.Visible = false;
+                lblMarc.Visible = false;
+                comboQuant.Visible = false;
+                lblQuant.Visible = false;
+                comboMed.Visible = false;
+                lblMed.Visible = false;
             }
             else if (value == "Medicamentos")
             {
                 comboMed.Visible = true;
                 lblMed.Visible = true;
+
+                comboMarca.Visible = false;
+                lblMarc.Visible = false;
+                comboQuant.Visible = false;
+                lblQuant.Visible = false;
+                comboBrinquedos.Visible = false;
+                lblBrinq.Visible = false;
             }
         }
 

@@ -36,16 +36,14 @@
             button2 = new Button();
             label1 = new Label();
             label3 = new Label();
-            label2 = new Label();
             label4 = new Label();
             comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
             dataGridView2 = new DataGridView();
             animal = new DataGridViewTextBoxColumn();
             estado = new DataGridViewTextBoxColumn();
             sexo = new DataGridViewTextBoxColumn();
             tempo = new DataGridViewTextBoxColumn();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -104,17 +102,6 @@
             label3.TabIndex = 6;
             label3.Text = "Cidade";
             // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(11, 149);
-            label2.Name = "label2";
-            label2.Size = new Size(72, 21);
-            label2.TabIndex = 8;
-            label2.Text = "Petshop";
-            // 
             // label4
             // 
             label4.Anchor = AnchorStyles.None;
@@ -138,24 +125,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(118, 23);
             comboBox1.TabIndex = 13;
-            // 
-            // comboBox2
-            // 
-            comboBox2.Anchor = AnchorStyles.None;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(84, 120);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(118, 23);
-            comboBox2.TabIndex = 14;
-            // 
-            // comboBox3
-            // 
-            comboBox3.Anchor = AnchorStyles.None;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(84, 149);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(118, 23);
-            comboBox3.TabIndex = 15;
             // 
             // dataGridView2
             // 
@@ -231,17 +200,23 @@
             tempo.Name = "tempo";
             tempo.ReadOnly = true;
             // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.None;
+            textBox1.Location = new Point(84, 120);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(118, 23);
+            textBox1.TabIndex = 29;
+            // 
             // FormPets
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(826, 450);
+            Controls.Add(textBox1);
             Controls.Add(dataGridView2);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
             Controls.Add(comboBox1);
             Controls.Add(label4);
-            Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(button2);
@@ -260,15 +235,13 @@
         private Button button2;
         private Label label1;
         private Label label3;
-        private Label label2;
         private Label label4;
         private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn animal;
         private DataGridViewTextBoxColumn estado;
         private DataGridViewTextBoxColumn sexo;
         private DataGridViewTextBoxColumn tempo;
+        private TextBox textBox1;
     }
 }
