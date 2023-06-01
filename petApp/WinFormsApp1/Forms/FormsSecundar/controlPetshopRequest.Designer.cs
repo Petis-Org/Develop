@@ -178,7 +178,7 @@
             comboMed.Anchor = AnchorStyles.None;
             comboMed.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboMed.FormattingEnabled = true;
-            comboMed.Location = new Point(398, 138);
+            comboMed.Location = new Point(556, 138);
             comboMed.Name = "comboMed";
             comboMed.Size = new Size(152, 29);
             comboMed.TabIndex = 40;
@@ -189,7 +189,7 @@
             lblMed.Anchor = AnchorStyles.None;
             lblMed.AutoSize = true;
             lblMed.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMed.Location = new Point(414, 114);
+            lblMed.Location = new Point(585, 114);
             lblMed.Name = "lblMed";
             lblMed.Size = new Size(112, 21);
             lblMed.TabIndex = 39;
@@ -201,7 +201,7 @@
             comboBrinquedos.Anchor = AnchorStyles.None;
             comboBrinquedos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBrinquedos.FormattingEnabled = true;
-            comboBrinquedos.Location = new Point(398, 199);
+            comboBrinquedos.Location = new Point(556, 199);
             comboBrinquedos.Name = "comboBrinquedos";
             comboBrinquedos.Size = new Size(152, 29);
             comboBrinquedos.TabIndex = 42;
@@ -212,7 +212,7 @@
             lblBrinq.Anchor = AnchorStyles.None;
             lblBrinq.AutoSize = true;
             lblBrinq.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBrinq.Location = new Point(427, 175);
+            lblBrinq.Location = new Point(585, 175);
             lblBrinq.Name = "lblBrinq";
             lblBrinq.Size = new Size(89, 21);
             lblBrinq.TabIndex = 41;

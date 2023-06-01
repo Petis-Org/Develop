@@ -79,7 +79,7 @@
             comboBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox4.FormattingEnabled = true;
             comboBox4.IntegralHeight = false;
-            comboBox4.Items.AddRange(new object[] { "Cobra", "Hamster", "Porquinho da India", "Cachorro", "Rato", "Gato", "Macaco", "Cobra", "Coelho", "Elefante", "Leão", "Tigre", "Cabra", "Cavalo", "Galinha", "Galo" });
+            comboBox4.Items.AddRange(new object[] { "Cachorro", "Rato", "Gato", "Macaco", "Coelho", "Elefante", "Leão", "Tigre" });
             comboBox4.Location = new Point(136, 94);
             comboBox4.Name = "comboBox4";
             comboBox4.Size = new Size(152, 29);

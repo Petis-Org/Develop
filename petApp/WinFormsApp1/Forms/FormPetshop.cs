@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dbClassLibra;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,13 @@ namespace WinFormsApp1.Forms
 {
     public partial class FormPetshop : Form
     {
+        public List<petShop> listPetShop()
+        {
+            string querySelect = "SELECT * FROM PETSHOP";
+            var connection = new petsCad();
+            var list = connection.SelectCommandPetShop(querySelect);
+            return list;
+        }
         public FormPetshop()
         {
             InitializeComponent();
@@ -70,6 +78,20 @@ namespace WinFormsApp1.Forms
         {
             controlPetshopContact frm = new controlPetshopContact();
             frm.Show();
+        }
+
+        private void FormPetshop_Load_2(object sender, EventArgs e)
+        {
+            var petshops = listPetShop();
+            foreach (var ps in petshops)
+            {
+                dataGridView1.Rows.Add(ps.Petshop, ps.Avaliacao, ps.Telefone, ps.Endereco);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

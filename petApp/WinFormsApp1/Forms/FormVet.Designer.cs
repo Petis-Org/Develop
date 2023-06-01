@@ -33,17 +33,13 @@
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label4 = new Label();
-            label3 = new Label();
-            label1 = new Label();
             button2 = new Button();
             button1 = new Button();
-            comboBox1 = new ComboBox();
             dataGridView2 = new DataGridView();
             nome = new DataGridViewTextBoxColumn();
             avaliacao = new DataGridViewTextBoxColumn();
             Telefone = new DataGridViewTextBoxColumn();
             Email = new DataGridViewTextBoxColumn();
-            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -58,30 +54,6 @@
             label4.Size = new Size(222, 28);
             label4.TabIndex = 23;
             label4.Text = "Tabela de Veterinários";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(2, 120);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 21);
-            label3.TabIndex = 18;
-            label3.Text = "Cidade";
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(4, 91);
-            label1.Name = "label1";
-            label1.Size = new Size(61, 21);
-            label1.TabIndex = 17;
-            label1.Text = "Estado";
             // 
             // button2
             // 
@@ -114,20 +86,6 @@
             button1.Text = "Contate";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
-            // 
-            // comboBox1
-            // 
-            comboBox1.Anchor = AnchorStyles.None;
-            comboBox1.DropDownHeight = 80;
-            comboBox1.DropDownWidth = 90;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.IntegralHeight = false;
-            comboBox1.ItemHeight = 15;
-            comboBox1.Items.AddRange(new object[] { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" });
-            comboBox1.Location = new Point(71, 91);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(118, 23);
-            comboBox1.TabIndex = 24;
             // 
             // dataGridView2
             // 
@@ -207,26 +165,14 @@
             Email.Name = "Email";
             Email.ReadOnly = true;
             // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(71, 120);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(118, 23);
-            textBox1.TabIndex = 30;
-            // 
             // FormVet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GhostWhite;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
             Controls.Add(dataGridView2);
-            Controls.Add(comboBox1);
             Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "FormVet";
@@ -240,16 +186,12 @@
         #endregion
 
         private Label label4;
-        private Label label3;
-        private Label label1;
         private Button button2;
         private Button button1;
-        private ComboBox comboBox1;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn nome;
         private DataGridViewTextBoxColumn avaliacao;
         private DataGridViewTextBoxColumn Telefone;
         private DataGridViewTextBoxColumn Email;
-        private TextBox textBox1;
     }
 }

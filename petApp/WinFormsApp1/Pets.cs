@@ -24,4 +24,19 @@ namespace WinFormsApp1
         public string Telefone { get; set; }
         public string Email { get; set; }
     }
+
+    public class petShop
+    {
+        public string Petshop { get; set; }
+        public double Avaliacao { get; set; }
+        public string Telefone { get; set;}
+        public string Endereco { get; set; }
+    }
+
+    public class vetRequest
+    {
+        public string Servico { get; set;}
+        public string Animal { get; set; }
+        public string Preco { get; set; }
+    }
 }

@@ -34,16 +34,12 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             button1 = new Button();
             button2 = new Button();
-            label1 = new Label();
-            label3 = new Label();
             label4 = new Label();
-            comboBox1 = new ComboBox();
             dataGridView2 = new DataGridView();
             animal = new DataGridViewTextBoxColumn();
             estado = new DataGridViewTextBoxColumn();
             sexo = new DataGridViewTextBoxColumn();
             tempo = new DataGridViewTextBoxColumn();
-            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -80,28 +76,6 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click_1;
             // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(22, 91);
-            label1.Name = "label1";
-            label1.Size = new Size(61, 21);
-            label1.TabIndex = 4;
-            label1.Text = "Estado";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(20, 120);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 21);
-            label3.TabIndex = 6;
-            label3.Text = "Cidade";
-            // 
             // label4
             // 
             label4.Anchor = AnchorStyles.None;
@@ -112,19 +86,6 @@
             label4.Size = new Size(272, 28);
             label4.TabIndex = 12;
             label4.Text = "Tabela de Pets para Adoção";
-            // 
-            // comboBox1
-            // 
-            comboBox1.Anchor = AnchorStyles.None;
-            comboBox1.DropDownHeight = 80;
-            comboBox1.DropDownWidth = 90;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.IntegralHeight = false;
-            comboBox1.Items.AddRange(new object[] { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" });
-            comboBox1.Location = new Point(84, 91);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(118, 23);
-            comboBox1.TabIndex = 13;
             // 
             // dataGridView2
             // 
@@ -200,25 +161,13 @@
             tempo.Name = "tempo";
             tempo.ReadOnly = true;
             // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(84, 120);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(118, 23);
-            textBox1.TabIndex = 29;
-            // 
             // FormPets
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(826, 450);
-            Controls.Add(textBox1);
             Controls.Add(dataGridView2);
-            Controls.Add(comboBox1);
             Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "FormPets";
@@ -233,15 +182,11 @@
 
         private Button button1;
         private Button button2;
-        private Label label1;
-        private Label label3;
         private Label label4;
-        private ComboBox comboBox1;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn animal;
         private DataGridViewTextBoxColumn estado;
         private DataGridViewTextBoxColumn sexo;
         private DataGridViewTextBoxColumn tempo;
-        private TextBox textBox1;
     }
 }
