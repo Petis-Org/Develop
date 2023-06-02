@@ -15,7 +15,7 @@ namespace WinFormsApp1.Forms.FormsSecundar
     {
         public List<vetRequest> listVetReq()
         {
-            string querySelect = "SELECT * FROM VETREQUEST";
+            string querySelect = $"SELECT * FROM VETREQUEST WHERE SERVICO = '{comboBox5.Text}' AND ANIMAL = '{comboBox4.Text}'";
             var connection = new petsCad();
             var list = connection.SelectCommandVetReq(querySelect);
             return list;
@@ -23,6 +23,23 @@ namespace WinFormsApp1.Forms.FormsSecundar
         public controlVetRequest()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox4_TextChanged(object sender, EventArgs e)
+        {
+            var servico = listVetReq();
+            var preco = "";
+
+            foreach (var vetReq in servico)
+            {
+                preco = vetReq.Preco;
+            }
+            textBox1.Text = preco.ToString();
         }
     }
 }

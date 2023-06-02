@@ -40,11 +40,14 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
             textBox1.Location = new Point(136, 138);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(152, 23);
+            textBox1.Size = new Size(152, 22);
             textBox1.TabIndex = 45;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // comboBox5
             // 
@@ -84,6 +87,7 @@
             comboBox4.Name = "comboBox4";
             comboBox4.Size = new Size(152, 29);
             comboBox4.TabIndex = 42;
+            comboBox4.TextChanged += comboBox4_TextChanged;
             // 
             // label3
             // 
