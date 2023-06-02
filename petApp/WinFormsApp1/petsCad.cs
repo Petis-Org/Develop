@@ -1,18 +1,19 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.VisualBasic.ApplicationServices;
+using System.Configuration;
 using WinFormsApp1;
 
 
 namespace dbClassLibra
 {
-
-    //https://learn.microsoft.com/pt-br/dotnet/api/system.data.sqlclient.sqlconnection?view=dotnet-plat-ext-7.0
+    
 
     public class petsCad
     {
+        private readonly string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         public void CreateCommand(string queryString){
             
-            using (var connection = new SqlConnection("server=tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password =Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            using (var connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString,
                     connection);
@@ -24,7 +25,7 @@ namespace dbClassLibra
         {
             var list = new List<Pets>();
 
-            using (var connection = new SqlConnection("server=tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password =Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            using (var connection = new SqlConnection(connectionString))
             {
                 var command = new SqlCommand(queryString, connection);
                     command.Connection.Open();
@@ -49,7 +50,7 @@ namespace dbClassLibra
 
         public List<Vet> SelectCommandVet (string queryString) {
             var list = new List<Vet>();
-            using (var connection = new SqlConnection("server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password = Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            using (var connection = new SqlConnection(connectionString))
             {
                 var command = new SqlCommand (queryString, connection);
                 command.Connection.Open();
@@ -72,7 +73,7 @@ namespace dbClassLibra
         public List<petShop> SelectCommandPetShop (string queryString)
         {
             var list = new List<petShop>(); 
-            using (var connection = new SqlConnection("server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password = Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            using (var connection = new SqlConnection(connectionString))
             {
                 var command = new SqlCommand (queryString, connection);
                 command.Connection.Open();
@@ -95,7 +96,7 @@ namespace dbClassLibra
         public List<vetRequest> SelectCommandVetReq (string queryString)
         {
             var list = new List<vetRequest>();
-            using ( var connection = new SqlConnection("server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password = Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            using ( var connection = new SqlConnection(connectionString))
             {
                 var command = new SqlCommand (queryString, connection);
                 command.Connection.Open();
