@@ -42,7 +42,7 @@
             textBox1.Anchor = AnchorStyles.None;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(136, 138);
+            textBox1.Location = new Point(136, 139);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(152, 22);
@@ -105,7 +105,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(81, 140);
+            label2.Location = new Point(81, 139);
             label2.Name = "label2";
             label2.Size = new Size(49, 21);
             label2.TabIndex = 40;
