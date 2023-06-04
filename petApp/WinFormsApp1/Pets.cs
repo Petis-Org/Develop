@@ -60,7 +60,7 @@ namespace WinFormsApp1
     public class brinquedo
     {
         public string Servico { get; set; }
-        public string Medicamento { get; set; }
+        public string Brinquedo { get; set; }
         public string Animal { get; set; }
         public string Preco { get; set; }
     }

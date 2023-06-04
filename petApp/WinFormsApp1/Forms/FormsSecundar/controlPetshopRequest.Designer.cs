@@ -87,11 +87,12 @@
             comboAnimal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboAnimal.FormattingEnabled = true;
             comboAnimal.IntegralHeight = false;
-            comboAnimal.Items.AddRange(new object[] { "Cachorro", "Gato", "Coelho", "Cobra", "Macaco", "Jabuti", "Tartaruga", "Cágado" });
+            comboAnimal.Items.AddRange(new object[] { "Gato", "Cachorro", "Coelho", "Cobra", "Macaco", "Jabuti", "Tartaruga", "Cágado" });
             comboAnimal.Location = new Point(240, 199);
             comboAnimal.Name = "comboAnimal";
             comboAnimal.Size = new Size(152, 29);
             comboAnimal.TabIndex = 35;
+            comboAnimal.SelectedIndexChanged += comboAnimal_SelectedIndexChanged;
             // 
             // label3
             // 
@@ -120,6 +121,7 @@
             comboQuant.Anchor = AnchorStyles.None;
             comboQuant.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboQuant.FormattingEnabled = true;
+            comboQuant.Items.AddRange(new object[] { "1 kg" });
             comboQuant.Location = new Point(398, 199);
             comboQuant.Name = "comboQuant";
             comboQuant.Size = new Size(152, 29);
@@ -143,6 +145,7 @@
             comboMarca.Anchor = AnchorStyles.None;
             comboMarca.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboMarca.FormattingEnabled = true;
+            comboMarca.Items.AddRange(new object[] { "Golden" });
             comboMarca.Location = new Point(398, 138);
             comboMarca.Name = "comboMarca";
             comboMarca.Size = new Size(152, 29);

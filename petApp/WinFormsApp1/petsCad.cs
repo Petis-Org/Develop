@@ -114,5 +114,29 @@ namespace dbClassLibra
                 return list;
             }
         }
+
+        public List<racao> SelectCommandRacao (string queryString)
+        {
+            var list = new List<racao>();
+            using (var connection = new SqlConnection("Server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password =Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            {
+                var command = new SqlCommand (queryString, connection);
+                command.Connection.Open();
+                var Reader = command.ExecuteReader();
+
+                while (Reader.Read())
+                {
+                    list.Add(new racao
+                    {
+                        Servico = Reader.GetString(0),
+                        Marca = Reader.GetString(1),
+                        Quantidade = Reader.GetString(2),
+                        Animal = Reader.GetString(3),
+                        Preco = Reader.GetString(4)
+                    });
+                }
+                return list;
+            }
+        }
     }
 }

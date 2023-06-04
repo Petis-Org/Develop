@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dbClassLibra;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,14 @@ namespace WinFormsApp1.Forms.FormsSecundar
 {
     public partial class controlPetshopRequest : Form
     {
+        public List<racao> listRacao()
+        {
+            string querySelect = $"SELECT * FROM RACAO WHERE SERVICO = '{comboServ}' AND MARCA = '{comboMarca}' AND QUANTIDADE = '{comboQuant}' AND ANIMAL = '{comboAnimal}'";
+            var connection = new petsCad();
+            var list = connection.SelectCommandRacao(querySelect);
+            return list;
+        }
+
         private void selectComboTypes()
         {
             string value = comboServ.SelectedItem.ToString();
@@ -66,6 +75,18 @@ namespace WinFormsApp1.Forms.FormsSecundar
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
             selectComboTypes();
+        }
+
+        private void comboAnimal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var servico = listRacao();
+            var preco = "";
+
+            foreach (var racao in servico)
+            {
+                preco = racao.Preco;
+            }
+            textPreco.Text = preco.ToString();
         }
     }
 }
