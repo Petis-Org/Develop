@@ -121,7 +121,7 @@ namespace dbClassLibra
             using (var connection = new SqlConnection("Server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password =Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
             {
                 var command = new SqlCommand (queryString, connection);
-                command.Connection.Open();
+                connection.Open();
                 var Reader = command.ExecuteReader();
 
                 while (Reader.Read())
@@ -133,6 +133,72 @@ namespace dbClassLibra
                         Quantidade = Reader.GetString(2),
                         Animal = Reader.GetString(3),
                         Preco = Reader.GetString(4)
+                    });
+                }
+                return list;
+            }
+        }
+
+        public List<string> SelectCommandObject(string queryString)
+        {
+            var list = new List<string>();
+            using (var connection = new SqlConnection("Server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password =Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            {
+                var command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                var Reader = command.ExecuteReader();
+
+                while (Reader.Read())
+                {
+                    for(int i = 0; i < Reader.FieldCount; i++)
+                    {
+                        list.Add(Reader.GetString(i));
+                    }
+                }
+                return list;
+            }
+        }
+
+        public List<medicamento> SelectCommandMed (string queryString)
+        {
+            var list = new List<medicamento>();
+            using (var connection = new SqlConnection("Server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password =Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            {
+                var command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                var Reader = command.ExecuteReader();
+
+                while (Reader.Read())
+                {
+                    list.Add(new medicamento
+                    {
+                        Servico = Reader.GetString(0),
+                        Medicamento = Reader.GetString(1),
+                        Animal = Reader.GetString(2),
+                        Preco = Reader.GetString(3)
+                    });
+                }
+                return list;
+            }
+        }
+
+        public List<brinquedo> SelectCommandBrinq (string queryString)
+        {
+            var list = new List<brinquedo>();
+            using (var connection = new SqlConnection("Server = tcp:petisserver.database.windows.net,1433; Initial Catalog = PetisDB; Persist Security Info = False; User ID = JoaoGabrielJG; Password =Ooudh2934@!)*)@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
+            {
+                var command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                var Reader = command.ExecuteReader();
+
+                while (Reader.Read())
+                {
+                    list.Add(new brinquedo
+                    {
+                        Servico = Reader.GetString(0),
+                        Brinquedo = Reader.GetString(1),
+                        Animal = Reader.GetString (2),
+                        Preco = Reader.GetString(3)
                     });
                 }
                 return list;

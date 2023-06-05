@@ -47,6 +47,7 @@
             // 
             // textPreco
             // 
+            textPreco.Anchor = AnchorStyles.None;
             textPreco.Location = new Point(240, 275);
             textPreco.Name = "textPreco";
             textPreco.ReadOnly = true;
@@ -93,6 +94,7 @@
             comboAnimal.Size = new Size(152, 29);
             comboAnimal.TabIndex = 35;
             comboAnimal.SelectedIndexChanged += comboAnimal_SelectedIndexChanged;
+            comboAnimal.TextChanged += comboAnimal_TextChanged;
             // 
             // label3
             // 
@@ -181,6 +183,7 @@
             comboMed.Anchor = AnchorStyles.None;
             comboMed.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboMed.FormattingEnabled = true;
+            comboMed.Items.AddRange(new object[] { "Mercepton 20ML" });
             comboMed.Location = new Point(556, 138);
             comboMed.Name = "comboMed";
             comboMed.Size = new Size(152, 29);
@@ -204,6 +207,7 @@
             comboBrinquedos.Anchor = AnchorStyles.None;
             comboBrinquedos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBrinquedos.FormattingEnabled = true;
+            comboBrinquedos.Items.AddRange(new object[] { "Bola de Tênis" });
             comboBrinquedos.Location = new Point(556, 199);
             comboBrinquedos.Name = "comboBrinquedos";
             comboBrinquedos.Size = new Size(152, 29);

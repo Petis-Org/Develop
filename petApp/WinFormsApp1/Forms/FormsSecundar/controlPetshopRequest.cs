@@ -13,11 +13,10 @@ namespace WinFormsApp1.Forms.FormsSecundar
 {
     public partial class controlPetshopRequest : Form
     {
-        public List<racao> listRacao()
+        public List<string> listRacao(string querySelect)
         {
-            string querySelect = $"SELECT * FROM RACAO WHERE SERVICO = '{comboServ}' AND MARCA = '{comboMarca}' AND QUANTIDADE = '{comboQuant}' AND ANIMAL = '{comboAnimal}'";
             var connection = new petsCad();
-            var list = connection.SelectCommandRacao(querySelect);
+            var list = connection.SelectCommandObject(querySelect);
             return list;
         }
 
@@ -79,14 +78,35 @@ namespace WinFormsApp1.Forms.FormsSecundar
 
         private void comboAnimal_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var servico = listRacao();
-            var preco = "";
+            string querySelect = "";
 
-            foreach (var racao in servico)
+            if (comboServ.Text == "Ração")
             {
-                preco = racao.Preco;
+                querySelect = $"SELECT * FROM RACAO WHERE SERVICO = '{comboServ.Text}' AND MARCA = '{comboMarca.Text}' AND QUANTIDADE = '{comboQuant.Text}' AND ANIMAL = '{comboAnimal.Text}'";
             }
-            textPreco.Text = preco.ToString();
+            else if (comboServ.Text == "Medicamentos")
+            {
+                querySelect = $"SELECT * FROM MEDICAMENTO WHERE SERVICO = '{comboServ.Text}' AND MEDICAMENTO = '{comboMed.Text}' AND ANIMAL = '{comboAnimal.Text}'";
+            }
+            else if (comboServ.Text == "Brinquedos")
+            {
+                querySelect = $"SELECT * FROM BRINQUEDO WHERE SERVICO = '{comboServ.Text}' AND BRINQUEDO = '{comboBrinquedos}' AND ANIMAL = '{comboAnimal.Text}'";
+            }
+
+            var servico = listRacao(querySelect);
+            List<string> list = new List<string>();
+
+            foreach (var item in servico)
+            {
+                list.Add(item.ToString());
+            }
+
+            textPreco.Text = list[list.Count - 1].ToString();
+        }
+
+        private void comboAnimal_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
