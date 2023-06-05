@@ -90,7 +90,7 @@ namespace WinFormsApp1.Forms.FormsSecundar
             }
             else if (comboServ.Text == "Brinquedos")
             {
-                querySelect = $"SELECT * FROM BRINQUEDO WHERE SERVICO = '{comboServ.Text}' AND BRINQUEDO = '{comboBrinquedos}' AND ANIMAL = '{comboAnimal.Text}'";
+                querySelect = $"SELECT * FROM BRINQUEDO WHERE SERVICO = '{comboServ.Text}' AND BRINQUEDO = '{comboBrinquedos.Text}' AND ANIMAL = '{comboAnimal.Text}'";
             }
 
             var servico = listRacao(querySelect);
