@@ -128,5 +128,15 @@ namespace WinFormsApp1
         {
             OpenChildForm(new Forms.FormCalendar(), sender);
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //OpenChildForm(new Forms.FormHome(), sender);
+        }
     }
 }

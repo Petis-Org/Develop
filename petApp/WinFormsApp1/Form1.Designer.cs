@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelMenu = new Panel();
             buttonCalendar = new Button();
             buttonVet = new Button();
@@ -41,15 +39,29 @@
             panelTitle = new Panel();
             LblTitle = new Label();
             panelDesk = new Panel();
-            imageList1 = new ImageList(components);
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             panelTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
             // 
             panelMenu.BackColor = Color.FromArgb(52, 52, 76);
+            panelMenu.Controls.Add(pictureBox5);
+            panelMenu.Controls.Add(pictureBox4);
+            panelMenu.Controls.Add(pictureBox3);
+            panelMenu.Controls.Add(pictureBox1);
+            panelMenu.Controls.Add(pictureBox2);
             panelMenu.Controls.Add(buttonCalendar);
             panelMenu.Controls.Add(buttonVet);
             panelMenu.Controls.Add(buttonPetshop);
@@ -67,13 +79,14 @@
             buttonCalendar.Anchor = AnchorStyles.None;
             buttonCalendar.FlatAppearance.BorderSize = 0;
             buttonCalendar.FlatStyle = FlatStyle.Flat;
-            buttonCalendar.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCalendar.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonCalendar.ForeColor = Color.Gainsboro;
             buttonCalendar.Location = new Point(0, 368);
             buttonCalendar.Name = "buttonCalendar";
             buttonCalendar.Size = new Size(220, 70);
             buttonCalendar.TabIndex = 5;
             buttonCalendar.Text = "Calendario";
+            buttonCalendar.TextAlign = ContentAlignment.MiddleRight;
             buttonCalendar.UseVisualStyleBackColor = true;
             buttonCalendar.Click += buttonCalendar_Click;
             // 
@@ -82,13 +95,14 @@
             buttonVet.Dock = DockStyle.Top;
             buttonVet.FlatAppearance.BorderSize = 0;
             buttonVet.FlatStyle = FlatStyle.Flat;
-            buttonVet.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonVet.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonVet.ForeColor = Color.Gainsboro;
             buttonVet.Location = new Point(0, 298);
             buttonVet.Name = "buttonVet";
             buttonVet.Size = new Size(220, 70);
             buttonVet.TabIndex = 4;
             buttonVet.Text = "Veterinarios";
+            buttonVet.TextAlign = ContentAlignment.MiddleRight;
             buttonVet.UseVisualStyleBackColor = true;
             buttonVet.Click += buttonVet_Click;
             // 
@@ -97,13 +111,14 @@
             buttonPetshop.Dock = DockStyle.Top;
             buttonPetshop.FlatAppearance.BorderSize = 0;
             buttonPetshop.FlatStyle = FlatStyle.Flat;
-            buttonPetshop.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPetshop.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonPetshop.ForeColor = Color.Gainsboro;
             buttonPetshop.Location = new Point(0, 228);
             buttonPetshop.Name = "buttonPetshop";
             buttonPetshop.Size = new Size(220, 70);
             buttonPetshop.TabIndex = 3;
             buttonPetshop.Text = "Petshop";
+            buttonPetshop.TextAlign = ContentAlignment.MiddleRight;
             buttonPetshop.UseVisualStyleBackColor = true;
             buttonPetshop.Click += buttonPetshop_Click;
             // 
@@ -112,13 +127,14 @@
             buttonPets.Dock = DockStyle.Top;
             buttonPets.FlatAppearance.BorderSize = 0;
             buttonPets.FlatStyle = FlatStyle.Flat;
-            buttonPets.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPets.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonPets.ForeColor = Color.Gainsboro;
             buttonPets.Location = new Point(0, 158);
             buttonPets.Name = "buttonPets";
             buttonPets.Size = new Size(220, 70);
             buttonPets.TabIndex = 2;
             buttonPets.Text = "Pets";
+            buttonPets.TextAlign = ContentAlignment.MiddleRight;
             buttonPets.UseVisualStyleBackColor = true;
             buttonPets.Click += buttonPets_Click;
             // 
@@ -127,14 +143,14 @@
             buttonHome.Dock = DockStyle.Top;
             buttonHome.FlatAppearance.BorderSize = 0;
             buttonHome.FlatStyle = FlatStyle.Flat;
-            buttonHome.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonHome.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonHome.ForeColor = Color.Gainsboro;
-            buttonHome.ImageList = imageList1;
             buttonHome.Location = new Point(0, 88);
             buttonHome.Name = "buttonHome";
             buttonHome.Size = new Size(220, 70);
             buttonHome.TabIndex = 1;
             buttonHome.Text = "Home";
+            buttonHome.TextAlign = ContentAlignment.MiddleRight;
             buttonHome.UseVisualStyleBackColor = true;
             buttonHome.Click += buttonHome_Click;
             // 
@@ -174,11 +190,11 @@
             // 
             LblTitle.Anchor = AnchorStyles.None;
             LblTitle.AutoSize = true;
-            LblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            LblTitle.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             LblTitle.ForeColor = Color.White;
             LblTitle.Location = new Point(348, 26);
             LblTitle.Name = "LblTitle";
-            LblTitle.Size = new Size(77, 30);
+            LblTitle.Size = new Size(79, 30);
             LblTitle.TabIndex = 0;
             LblTitle.Text = "HOME";
             // 
@@ -190,17 +206,56 @@
             panelDesk.Size = new Size(804, 489);
             panelDesk.TabIndex = 2;
             // 
-            // imageList1
+            // pictureBox2
             // 
-            imageList1.ColorDepth = ColorDepth.Depth8Bit;
-            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
-            imageList1.TransparentColor = Color.Transparent;
-            imageList1.Images.SetKeyName(0, "8e04f8a2-fed6-4b7a-bf7e-66e32c816739.jpg");
-            imageList1.Images.SetKeyName(1, "25694.png");
-            imageList1.Images.SetKeyName(2, "88115.png");
-            imageList1.Images.SetKeyName(3, "103717.png");
-            imageList1.Images.SetKeyName(4, "1642972.png");
-            imageList1.Images.SetKeyName(5, "6428769.png");
+            pictureBox2.Image = Properties.Resources._25694;
+            pictureBox2.Location = new Point(12, 88);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(77, 70);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._103717;
+            pictureBox1.Location = new Point(12, 158);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(77, 70);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources._1642972;
+            pictureBox3.Location = new Point(12, 228);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(77, 70);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 7;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources._88115;
+            pictureBox4.Location = new Point(12, 298);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(77, 70);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 8;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources._64287691;
+            pictureBox5.Location = new Point(12, 368);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(77, 70);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 9;
+            pictureBox5.TabStop = false;
             // 
             // Form1
             // 
@@ -212,11 +267,17 @@
             Controls.Add(panelMenu);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panelMenu.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             panelLogo.PerformLayout();
             panelTitle.ResumeLayout(false);
             panelTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -233,7 +294,10 @@
         private Panel panelTitle;
         private Label LblTitle;
         private Panel panelDesk;
-        private ImageList imageList1;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
     }
 }
