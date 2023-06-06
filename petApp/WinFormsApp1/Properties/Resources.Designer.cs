@@ -113,6 +113,16 @@ namespace WinFormsApp1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_246059 {
+            get {
+                object obj = ResourceManager.GetObject("img_246059", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap User_icon_BLACK_01 {
             get {
                 object obj = ResourceManager.GetObject("User_icon_BLACK-01", resourceCulture);

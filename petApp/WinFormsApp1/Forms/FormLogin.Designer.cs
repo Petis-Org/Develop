@@ -39,9 +39,11 @@
             panel2 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // button3
@@ -152,12 +154,24 @@
             pictureBox3.TabIndex = 23;
             pictureBox3.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.img_246059;
+            pictureBox4.Location = new Point(254, 259);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(41, 34);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 24;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(292, 447);
+            Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
@@ -176,6 +190,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -192,5 +207,6 @@
         private Panel panel2;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }

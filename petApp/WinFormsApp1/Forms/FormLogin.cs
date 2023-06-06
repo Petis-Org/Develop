@@ -61,5 +61,17 @@ namespace WinFormsApp1.Forms
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (textBox1.UseSystemPasswordChar == true)
+            {
+                textBox1.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox1.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
