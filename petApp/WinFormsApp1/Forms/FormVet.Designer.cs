@@ -47,11 +47,11 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(195, 9);
+            label4.Location = new Point(12, 5);
             label4.Name = "label4";
-            label4.Size = new Size(222, 28);
+            label4.Size = new Size(266, 32);
             label4.TabIndex = 23;
             label4.Text = "Tabela de Veterinários";
             // 
@@ -63,7 +63,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(552, 389);
+            button2.Location = new Point(553, 389);
             button2.Name = "button2";
             button2.Size = new Size(237, 49);
             button2.TabIndex = 14;
@@ -79,7 +79,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(195, 389);
+            button1.Location = new Point(12, 389);
             button1.Name = "button1";
             button1.Size = new Size(237, 49);
             button1.TabIndex = 13;
@@ -117,7 +117,7 @@
             dataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
             dataGridView2.EnableHeadersVisualStyles = false;
             dataGridView2.GridColor = SystemColors.ControlDarkDark;
-            dataGridView2.Location = new Point(195, 40);
+            dataGridView2.Location = new Point(12, 40);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -131,7 +131,7 @@
             dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView2.RowHeadersVisible = false;
             dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(594, 343);
+            dataGridView2.Size = new Size(778, 343);
             dataGridView2.TabIndex = 29;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 

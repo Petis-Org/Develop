@@ -106,7 +106,7 @@ namespace WinFormsApp1
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            
+            OpenChildForm(new Forms.FormHome(), sender);
         }
 
         private void buttonPets_Click(object sender, EventArgs e)

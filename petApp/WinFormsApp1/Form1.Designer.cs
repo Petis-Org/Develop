@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelMenu = new Panel();
             buttonCalendar = new Button();
             buttonVet = new Button();
@@ -39,6 +41,7 @@
             panelTitle = new Panel();
             LblTitle = new Label();
             panelDesk = new Panel();
+            imageList1 = new ImageList(components);
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             panelTitle.SuspendLayout();
@@ -61,7 +64,7 @@
             // 
             // buttonCalendar
             // 
-            buttonCalendar.Dock = DockStyle.Top;
+            buttonCalendar.Anchor = AnchorStyles.None;
             buttonCalendar.FlatAppearance.BorderSize = 0;
             buttonCalendar.FlatStyle = FlatStyle.Flat;
             buttonCalendar.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
@@ -186,6 +189,18 @@
             panelDesk.Size = new Size(804, 489);
             panelDesk.TabIndex = 2;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth8Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "8e04f8a2-fed6-4b7a-bf7e-66e32c816739.jpg");
+            imageList1.Images.SetKeyName(1, "25694.png");
+            imageList1.Images.SetKeyName(2, "88115.png");
+            imageList1.Images.SetKeyName(3, "103717.png");
+            imageList1.Images.SetKeyName(4, "1642972.png");
+            imageList1.Images.SetKeyName(5, "6428769.png");
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -217,5 +232,6 @@
         private Panel panelTitle;
         private Label LblTitle;
         private Panel panelDesk;
+        private ImageList imageList1;
     }
 }

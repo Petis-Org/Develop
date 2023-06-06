@@ -80,10 +80,10 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(269, 9);
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(24, 5);
             label4.Name = "label4";
-            label4.Size = new Size(272, 28);
+            label4.Size = new Size(328, 32);
             label4.TabIndex = 12;
             label4.Text = "Tabela de Pets para Adoção";
             // 

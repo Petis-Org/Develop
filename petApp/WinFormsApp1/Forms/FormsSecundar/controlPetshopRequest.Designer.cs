@@ -48,10 +48,12 @@
             // textPreco
             // 
             textPreco.Anchor = AnchorStyles.None;
+            textPreco.BorderStyle = BorderStyle.None;
+            textPreco.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
             textPreco.Location = new Point(240, 261);
             textPreco.Name = "textPreco";
             textPreco.ReadOnly = true;
-            textPreco.Size = new Size(152, 23);
+            textPreco.Size = new Size(152, 22);
             textPreco.TabIndex = 38;
             // 
             // comboServ
