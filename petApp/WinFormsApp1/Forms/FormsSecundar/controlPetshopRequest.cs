@@ -108,5 +108,10 @@ namespace WinFormsApp1.Forms.FormsSecundar
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -129,6 +129,7 @@
             buttonHome.FlatStyle = FlatStyle.Flat;
             buttonHome.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             buttonHome.ForeColor = Color.Gainsboro;
+            buttonHome.ImageList = imageList1;
             buttonHome.Location = new Point(0, 88);
             buttonHome.Name = "buttonHome";
             buttonHome.Size = new Size(220, 70);
@@ -233,5 +234,6 @@
         private Label LblTitle;
         private Panel panelDesk;
         private ImageList imageList1;
+        private PictureBox pictureBox1;
     }
 }

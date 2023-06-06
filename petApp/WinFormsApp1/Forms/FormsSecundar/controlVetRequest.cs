@@ -41,5 +41,10 @@ namespace WinFormsApp1.Forms.FormsSecundar
             }
             textBox1.Text = preco.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
