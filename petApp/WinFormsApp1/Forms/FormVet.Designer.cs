@@ -153,7 +153,7 @@
             // 
             // Telefone
             // 
-            Telefone.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            Telefone.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             Telefone.HeaderText = "Telefone";
             Telefone.Name = "Telefone";
             Telefone.ReadOnly = true;
@@ -161,9 +161,11 @@
             // 
             // Email
             // 
+            Email.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             Email.HeaderText = "Email";
             Email.Name = "Email";
             Email.ReadOnly = true;
+            Email.Width = 71;
             // 
             // FormVet
             // 
