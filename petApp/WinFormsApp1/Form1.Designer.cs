@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             panelMenu = new Panel();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             buttonCalendar = new Button();
             buttonVet = new Button();
             buttonPetshop = new Button();
@@ -39,19 +44,14 @@
             panelTitle = new Panel();
             LblTitle = new Label();
             panelDesk = new Panel();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
             panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelLogo.SuspendLayout();
             panelTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -73,6 +73,57 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(220, 577);
             panelMenu.TabIndex = 0;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources._64287691;
+            pictureBox5.Location = new Point(12, 368);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(77, 70);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 9;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources._88115;
+            pictureBox4.Location = new Point(12, 298);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(77, 70);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 8;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources._1642972;
+            pictureBox3.Location = new Point(12, 228);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(77, 70);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 7;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._103717;
+            pictureBox1.Location = new Point(12, 158);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(77, 70);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._25694;
+            pictureBox2.Location = new Point(12, 88);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(77, 70);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // buttonCalendar
             // 
@@ -169,7 +220,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(67, 26);
+            label1.Location = new Point(113, 26);
             label1.Name = "label1";
             label1.Size = new Size(82, 37);
             label1.TabIndex = 0;
@@ -206,57 +257,6 @@
             panelDesk.Size = new Size(804, 489);
             panelDesk.TabIndex = 2;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources._25694;
-            pictureBox2.Location = new Point(12, 88);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(77, 70);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources._103717;
-            pictureBox1.Location = new Point(12, 158);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(77, 70);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources._1642972;
-            pictureBox3.Location = new Point(12, 228);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(77, 70);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 7;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources._88115;
-            pictureBox4.Location = new Point(12, 298);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(77, 70);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 8;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources._64287691;
-            pictureBox5.Location = new Point(12, 368);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(77, 70);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 9;
-            pictureBox5.TabStop = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -269,15 +269,15 @@
             Text = "Form1";
             Load += Form1_Load;
             panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panelLogo.ResumeLayout(false);
             panelLogo.PerformLayout();
             panelTitle.ResumeLayout(false);
             panelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 

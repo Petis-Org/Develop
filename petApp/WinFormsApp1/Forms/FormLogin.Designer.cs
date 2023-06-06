@@ -157,9 +157,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.img_246059;
-            pictureBox4.Location = new Point(254, 259);
+            pictureBox4.Location = new Point(254, 261);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 34);
+            pictureBox4.Size = new Size(37, 32);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 24;
             pictureBox4.TabStop = false;
