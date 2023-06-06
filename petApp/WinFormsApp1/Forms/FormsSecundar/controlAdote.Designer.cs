@@ -36,25 +36,29 @@
             // 
             textBox1.Anchor = AnchorStyles.None;
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(197, 94);
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(116, 102);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(187, 90);
+            textBox1.Size = new Size(375, 50);
             textBox1.TabIndex = 4;
             textBox1.Text = "Enviamos um e-mail com as informações para adoção, muito obrigado por salvar uma vida!";
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(245, 190);
             button1.Name = "button1";
             button1.Size = new Size(83, 40);
             button1.TabIndex = 3;
             button1.Text = "Voltar";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // controlAdote

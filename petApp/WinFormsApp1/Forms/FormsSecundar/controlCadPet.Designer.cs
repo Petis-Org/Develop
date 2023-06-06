@@ -47,11 +47,12 @@
             // 
             comboBox6.DropDownHeight = 80;
             comboBox6.DropDownWidth = 90;
-            comboBox6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox6.FlatStyle = FlatStyle.Flat;
+            comboBox6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox6.FormattingEnabled = true;
             comboBox6.IntegralHeight = false;
             comboBox6.Items.AddRange(new object[] { "1 a 6 meses", "6 a 12 meses", "1 a 2 anos", "3 a 4 anos", "5 a 6 anos", "7 a 8 anos", "9 a 10 anos" });
-            comboBox6.Location = new Point(276, 268);
+            comboBox6.Location = new Point(276, 261);
             comboBox6.Name = "comboBox6";
             comboBox6.Size = new Size(152, 29);
             comboBox6.TabIndex = 26;
@@ -60,10 +61,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(117, 268);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(99, 264);
             label5.Name = "label5";
-            label5.Size = new Size(153, 21);
+            label5.Size = new Size(171, 21);
             label5.TabIndex = 25;
             label5.Text = "Tempo (aproximado)";
             // 
@@ -71,31 +72,33 @@
             // 
             comboBox5.DropDownHeight = 80;
             comboBox5.DropDownWidth = 90;
-            comboBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox5.FlatStyle = FlatStyle.Flat;
+            comboBox5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox5.FormattingEnabled = true;
             comboBox5.IntegralHeight = false;
             comboBox5.Items.AddRange(new object[] { "Cachorro", "Coelho", "Gato", "Macaco", "Leonardo" });
-            comboBox5.Location = new Point(276, 93);
+            comboBox5.Location = new Point(276, 82);
             comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(152, 29);
+            comboBox5.Size = new Size(152, 33);
             comboBox5.TabIndex = 24;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(211, 101);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(205, 82);
             label4.Name = "label4";
-            label4.Size = new Size(59, 21);
+            label4.Size = new Size(65, 21);
             label4.TabIndex = 23;
             label4.Text = "Animal";
             // 
             // comboBox4
             // 
-            comboBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox4.FlatStyle = FlatStyle.Flat;
+            comboBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox4.FormattingEnabled = true;
             comboBox4.Items.AddRange(new object[] { "Maculino", "Feminino" });
-            comboBox4.Location = new Point(276, 233);
+            comboBox4.Location = new Point(276, 226);
             comboBox4.Name = "comboBox4";
             comboBox4.Size = new Size(152, 29);
             comboBox4.TabIndex = 22;
@@ -103,29 +106,30 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(227, 236);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(223, 226);
             label3.Name = "label3";
-            label3.Size = new Size(43, 21);
+            label3.Size = new Size(47, 21);
             label3.TabIndex = 21;
             label3.Text = "Sexo";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(211, 202);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(207, 191);
             label2.Name = "label2";
-            label2.Size = new Size(58, 21);
+            label2.Size = new Size(63, 21);
             label2.TabIndex = 19;
             label2.Text = "Cidade";
             // 
             // comboBox2
             // 
-            comboBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox2.FlatStyle = FlatStyle.Flat;
+            comboBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" });
-            comboBox2.Location = new Point(276, 163);
+            comboBox2.Location = new Point(276, 156);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(152, 29);
             comboBox2.TabIndex = 18;
@@ -133,49 +137,54 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(214, 168);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(209, 156);
             label1.Name = "label1";
-            label1.Size = new Size(56, 21);
+            label1.Size = new Size(61, 21);
             label1.TabIndex = 17;
             label1.Text = "Estado";
             // 
             // button1
             // 
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(470, 262);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(469, 252);
             button1.Name = "button1";
             button1.Size = new Size(122, 39);
             button1.TabIndex = 15;
             button1.Text = "Confirma";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // Raça
             // 
             Raça.AutoSize = true;
-            Raça.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Raça.Location = new Point(227, 133);
+            Raça.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Raça.Location = new Point(224, 121);
             Raça.Name = "Raça";
-            Raça.Size = new Size(43, 21);
+            Raça.Size = new Size(46, 21);
             Raça.TabIndex = 14;
             Raça.Text = "Raça";
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(276, 202);
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(276, 191);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(152, 23);
+            textBox1.Size = new Size(152, 29);
             textBox1.TabIndex = 27;
             // 
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.None;
-            textBox2.Location = new Point(276, 133);
+            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox2.Location = new Point(276, 121);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(152, 23);
+            textBox2.Size = new Size(152, 29);
             textBox2.TabIndex = 28;
             // 
             // controlCadPet

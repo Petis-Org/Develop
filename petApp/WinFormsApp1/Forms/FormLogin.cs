@@ -44,14 +44,7 @@ namespace WinFormsApp1.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.UseSystemPasswordChar == true)
-            {
-                textBox1.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                textBox1.UseSystemPasswordChar = true;
-            }
+
         }
 
         private void FormLogin_Load(object sender, EventArgs e)

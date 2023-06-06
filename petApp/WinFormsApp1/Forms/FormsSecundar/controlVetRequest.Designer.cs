@@ -54,7 +54,8 @@
             comboBox5.Anchor = AnchorStyles.None;
             comboBox5.DropDownHeight = 80;
             comboBox5.DropDownWidth = 90;
-            comboBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox5.FlatStyle = FlatStyle.Flat;
+            comboBox5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox5.FormattingEnabled = true;
             comboBox5.IntegralHeight = false;
             comboBox5.Items.AddRange(new object[] { "Cirurgia", "Consulta", "Exames", "Vacinação", "Castração", "Internações", "Transfusões", "Imunização", "Procedimentos Especiais" });
@@ -67,10 +68,10 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(69, 62);
             label4.Name = "label4";
-            label4.Size = new Size(61, 21);
+            label4.Size = new Size(67, 21);
             label4.TabIndex = 43;
             label4.Text = "Serviço";
             // 
@@ -79,7 +80,8 @@
             comboBox4.Anchor = AnchorStyles.None;
             comboBox4.DropDownHeight = 80;
             comboBox4.DropDownWidth = 90;
-            comboBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox4.FlatStyle = FlatStyle.Flat;
+            comboBox4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox4.FormattingEnabled = true;
             comboBox4.IntegralHeight = false;
             comboBox4.Items.AddRange(new object[] { "Cachorro", "Rato", "Gato", "Macaco", "Coelho", "Elefante", "Leão", "Tigre" });
@@ -93,10 +95,10 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(71, 97);
             label3.Name = "label3";
-            label3.Size = new Size(59, 21);
+            label3.Size = new Size(65, 21);
             label3.TabIndex = 41;
             label3.Text = "Animal";
             // 
@@ -104,24 +106,27 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(81, 139);
             label2.Name = "label2";
-            label2.Size = new Size(49, 21);
+            label2.Size = new Size(53, 21);
             label2.TabIndex = 40;
             label2.Text = "Preço";
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(315, 179);
             button1.Name = "button1";
             button1.Size = new Size(122, 39);
             button1.TabIndex = 39;
             button1.Text = "Confirma";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // controlVetRequest

@@ -36,12 +36,17 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(279, 347);
             button1.Name = "button1";
             button1.Size = new Size(236, 57);
             button1.TabIndex = 8;
             button1.Text = "Enviar";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label1
